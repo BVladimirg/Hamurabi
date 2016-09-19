@@ -4,9 +4,39 @@ div.wrapper {
     font-size: 12px;
     line-height: 16px;
     margin: 0 auto;
-    max-width: 640px;
+    max-width: 800px;
+    min-width: 800px;
+
 }
 
-div.menu {
-    width: 20px;
+/* Game Window */
+div.game_window {
+    width: auto;
+    height: 600px;
+    background-color: rgb(235, 231, 231);
+    box-shadow: 0 0 5px rgb(66, 63, 92);
 }
+    div.menu {
+        width: 40%;
+        height: 20%;
+        position: relative;
+        left: 30%;
+        top: 40%;
+    }
+        button.continue, button.new_game {
+             position: relative;
+             height: 47%;
+             width: 100%;
+             background-color: rgb(238, 214, 94);
+             border: 2px solid lightgray;
+             border-radius: 8px;
+             font-size: 18px;
+        }
+            button.continue:active, button.new_game:active {
+                box-shadow: 0 0 5px rgb(66, 63, 92);
+            }
+            button.continue {
+                margin-bottom: 2%;
+            }
+/* /Game Window */
+

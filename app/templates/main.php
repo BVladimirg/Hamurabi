@@ -12,8 +12,8 @@
     <h1>Правитель Египта Хаммурапи</h1>
     <div class="game_window">
         <div class="menu">
-            <div class="continue">Продолжить</div>
-            <div class="new_game">Новая игра</div>
+            <button class="continue button">Продолжить</button>
+            <button class="new_game button">Новая игра</button>
         </div>
     </div>
 </div>
