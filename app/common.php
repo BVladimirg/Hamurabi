@@ -82,3 +82,45 @@ function render($template, $data = array())
     extract($data);
     require ('templates/' . $template . '.php');
 }
+
+/**
+ * Функция автозагрузки классов
+ */
+spl_autoload_register(function ($className) {
+    $className = str_replace('..', '', $className);
+    $root = __DIR__;
+
+    // классы моделей и контроллеров расположены в специальных каталогах
+    if (ends_with($className, 'Model')) {
+        $classFile = $root.'/models/' . $className . '.php';
+        if (file_exists($classFile)) {
+            require_once($classFile);
+            return;
+        }
+    }
+
+    if (ends_with($className, 'Controller')) {
+        $classFile = $root.'/controllers/' . $className . '.php';
+        if (file_exists($classFile)) {
+            require_once($classFile);
+            return;
+        }
+    }
+
+    // прочие классы расположены в ./classes
+    $classFile = $root.'/classes/' . $className . '.php';
+    if (file_exists($classFile))
+        require_once($classFile);
+});
+
+/**
+ * Проверка, что строка заканчивается на указанный суффикс
+ */
+function ends_with($string, $suffix)
+{
+    $strlen = strlen($string);
+    $fixlen = strlen($suffix);
+    if ($fixlen > $strlen)
+        return false;
+    return substr_compare($string, $suffix, $strlen - $fixlen, $fixlen) === 0;
+}
