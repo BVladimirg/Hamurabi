@@ -1,3 +1,8 @@
-/**
- * Created by Vladimir on 19.09.2016.
- */
+(function () {
+    $(document).ready(function () {
+        //*Стартовое меню*//
+        $('.new_game').click(function () {
+           console.log('asdasd');
+        });
+    });
+})();
