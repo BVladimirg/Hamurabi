@@ -41,41 +41,45 @@ div.game_window {
 
     /*Game processing*/
     div.top_menu_for_resurces {
-        background-color: aqua;
         width: 90%;
         height: 20%;
         margin: 10px auto;
     }
         div.resurce_window {
+            border: solid lightgrey 1px;
+            box-shadow: 0 0 5px black;
+            border-radius: 10%;
             display: inline-block;
-            background-color: green;
-            height: 100%;
+            background-color: khaki;
+            height: 90%;
             width: 30%;
             margin-right: 4%;
+            margin-top: 1%;
         }
         div.city_size_window {
             margin-right: 0;
         }
             div.resurce_image {
-                background-color: yellowgreen;
                 height: 100px;
                 width: 90px;
                 margin: 10px 10px;
                 float: left;
-
             }
+                .resurce_image img {
+                    width: 90%;
+                    height: 90%;
+                }
             div.resurce_count {
                 display: inline-block;
-                height: 40px;
-                width: 90px;
+                height: 28px;
+                width: 80px;
                 float: right;
-                background-color: aquamarine;
-                margin: 25px 10px 10px 0;
+                margin: 31px 10px 10px 0;
                 text-align: center;
                 border: 1px solid black;
-                border-radius: 20%;
+                border-radius: 35%;
                 font-size: 18px;
-                padding-top: 25px;
+                padding-top: 16px;
             }
 
     /* /Game processing*/
