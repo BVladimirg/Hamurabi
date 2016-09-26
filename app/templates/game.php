@@ -15,3 +15,9 @@
         <div class="resurce_count">1000</div>
     </div>
 </div>
+
+<div class="year_line">
+    <div class="year_count">1</div>
+</div>
+
+<div class="game_panel"></div>
