@@ -88,6 +88,23 @@ div.game_window {
                 font-size: 18px;
                 padding-top: 16px;
             }
+        div.information_menu {
+            display: none;
+            background-color: rgb(226, 250, 183);
+            position: absolute;
+            z-index: 5;
+            top: 150px;
+            left: 420px;
+            font-size: medium;
+            font-style: italic;
+            text-align: left;
+            padding: 10px 20px;
+            border: 1px solid black;
+            box-shadow: 0 0 4px lightgreen;
+        }
+        div.resurce_window:hover .information_menu {
+            display: block;
+        }
 
     /*Years count*/
     div.year_line {
