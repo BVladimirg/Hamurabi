@@ -10,5 +10,4 @@ function main() {
 }
 
 main();
-
-Oll
+ert
